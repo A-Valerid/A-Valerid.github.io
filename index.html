@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proect</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="RRR.js">
+
+  <!-- <style>
+
+    </style> -->
+</head>
+
+<body>
+
+  <h1 id="demo">Image Flip</h1>
+<h3>Туман в Апатитах:</h3>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="image/img_01.jpg" alt="street" style="width:600px;height:270px">
+    </div>
+    <div class="flip-box-back">
+      <!-- <h2>Сидоренко</h2> -->
+      <img src="image/img_02.jpg" alt="street" style="width:600px;height:270px">
+            <!-- <p>What an amazing city</p> -->
+    </div>
+  </div>
+</div>
+
+  <!-- <h1 id="demo"onmouseover="go01()" onmouseout="go02()">Привет</h1> -->
+  
+  <script>
+    document.getElementById("demo").onmouseover = function () { go01() };
+    document.getElementById("demo").onmouseout = function () { go02() };
+
+    function go01() {
+      document.getElementById("demo").style.color = "green";
+    }
+
+    function go02() {
+      document.getElementById("demo").style.color = "red";
+    }
+  </script>
+
+  <!-- <p id="demo">This is a paragraph.</p>
+
+
+  <picture>
+    <source media="(min-width:650px)" srcset="image/img_pink_flowers.jpg">
+    <source media="(min-width:465px)" srcset="image/img_white_flower.jpg">
+    <img src="image/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+  </picture> -->
+</body>
+
+</html>
